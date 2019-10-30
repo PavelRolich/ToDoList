@@ -1,0 +1,27 @@
+.layout {
+  display: inline-block;
+}
+
+.delete {
+  background-color:#de3f53;
+  border-radius:50%;
+  color:#fff;
+  display:none;
+  float:right;
+  font-weight: bold;
+  line-height: normal;
+  height:16px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  width:16px;
+  -webkit-transition: all .2s linear;
+      -moz-transition: all .2s linear;
+        -o-transition: all .2s linear;
+          transition: all .2s linear;
+
+  &:hover {
+    background-color:#fff;
+    color:#de3f53;
+  }
+}

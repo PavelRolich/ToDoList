@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="list-box">
+    <div class="header">
+      <p class="header-text" mat-header>To Do List</p>
+    </div>
+    <mat-list class="list">
+      <mat-list-item class="list-item" *ngFor="let item of listItems">
+        <mat-checkbox class="layout check" [checked]="item.blocked">{{ item.title }}</mat-checkbox>
+        <a (click)="OnDeleteClick($event, item.title)" class="layout delete">–</a>
+      </mat-list-item>
+    </mat-list>
+    <div class="input-box">
+      <input (keyup.enter)="onEnter($event)" class="text" matInput placeholder="Write new item and hit 'Enter'...">
+    </div>
+  </div>
+</div>
